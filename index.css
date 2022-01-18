@@ -1,0 +1,104 @@
+body {
+    background-color: black;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+    
+.navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+    position: sticky;
+}
+
+.navbar a {
+    float: left;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    width: 20%;
+    text-align: center;
+}
+
+.navbar a:hover {
+    background-color: #000;
+}
+
+.navbar a.active {
+    background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 100vh;
+        text-align: left;
+    }
+}
+
+/*
+change background-position to better align div bg images
+*/
+
+#fish {
+    float: left;
+    background-image: url(images/banner.png);
+    background-size: cover;
+    background-position: 90%;
+    width: 20%;
+    height: 100%;
+    color: white;
+}
+
+#linq {
+    float: left;
+    background-image: url(./images/galaxy.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 20%;
+    height: 100%;
+    color: white;
+}
+
+#sr {
+    float: left;
+    background-image: url(./images/gaymuslimretard.png);
+    background-position: center;
+    width: 20%;
+    height: 100%;
+    color: white;
+}
+
+#kai {
+    float: left;
+    background-image: url(./images/homies.png);
+    background-size: cover;
+    background-position: 5%;
+    width: 20%;
+    height: 100%;
+    color: white;
+}
+
+#bean {
+    float: left;
+    background-image: url(./images/homies.png);
+    background-size: cover;
+    background-position: 95%;
+    width: 20%;
+    height: 100%;
+    color: white;
+}
+
+@-webkit-keyframes filter-animation {
+    0% { -webkit-filter: blur(0px);}
+    100% { -webkit-filter: blur(8px);}
+}
+
+#fish:hover, #linq:hover, #sr:hover, #kai:hover, #bean:hover {
+    -webkit-animation: filter-animation 0.25s;
+    filter: blur(8px);
+}
