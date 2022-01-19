@@ -4,41 +4,6 @@ body {
     margin: 0;
     overflow: hidden;
 }
-    
-.navbar {
-    width: 100%;
-    background-color: #555;
-    overflow: auto;
-    position: sticky;
-}
-
-.navbar a {
-    float: left;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    color: white;
-    text-decoration: none;
-    font-size: 17px;
-    width: 20%;
-    text-align: center;
-}
-
-.navbar a:hover {
-    background-color: #000;
-}
-
-.navbar a.active {
-    background-color: #04AA6D;
-}
-
-@media screen and (max-width: 500px) {
-    .navbar a {
-        float: none;
-        display: block;
-        width: 100vh;
-        text-align: left;
-    }
-}
 
 /*
 change background-position to better align div bg images
@@ -46,7 +11,7 @@ change background-position to better align div bg images
 
 #fish {
     float: left;
-    background-image: url(images/banner.png);
+    background-image: url(./media/img/banner.png);
     background-size: cover;
     background-position: 90%;
     width: 20%;
@@ -56,7 +21,7 @@ change background-position to better align div bg images
 
 #linq {
     float: left;
-    background-image: url(./images/galaxy.jpg);
+    background-image: url(./media/img/galaxy.jpg);
     background-size: cover;
     background-position: center;
     width: 20%;
@@ -66,7 +31,7 @@ change background-position to better align div bg images
 
 #sr {
     float: left;
-    background-image: url(./images/gaymuslimretard.png);
+    background-image: url(./media/img/gaymuslimretard.png);
     background-position: center;
     width: 20%;
     height: 100%;
@@ -75,7 +40,7 @@ change background-position to better align div bg images
 
 #kai {
     float: left;
-    background-image: url(./images/homies.png);
+    background-image: url(./media/img/homies.png);
     background-size: cover;
     background-position: 5%;
     width: 20%;
@@ -85,7 +50,7 @@ change background-position to better align div bg images
 
 #bean {
     float: left;
-    background-image: url(./images/homies.png);
+    background-image: url(./media/img/homies.png);
     background-size: cover;
     background-position: 95%;
     width: 20%;
@@ -101,4 +66,12 @@ change background-position to better align div bg images
 #fish:hover, #linq:hover, #sr:hover, #kai:hover, #bean:hover {
     -webkit-animation: filter-animation 0.25s;
     filter: blur(8px);
+}
+
+#fish h1, #linq h1, #sr h1,#kai h1, #bean h1{
+    font-family: cursive;
+    padding-top: 25px;
+    writing-mode: vertical-rl;
+    text-shadow: 4px 4px black;
+    position: absolute;
 }
