@@ -1,4 +1,83 @@
+@font-face {
+    font-family: TBD;
+    src: url('../media/Fonts/theBreakdown.ttf');
+}
+
 body {
-    background-image: url(../media/img/BeanDipCover.png);
-    background-size: cover;
+    font-family: TBD;
+    background-image: radial-gradient(circle, darkorange, orangered);
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+}
+
+.title {
+    margin-top: 0%;
+    margin-bottom: 25px;
+    font-size: 100px;
+    text-shadow: 4px 4px white;
+}
+
+.column {
+  float: left;
+  width: 24%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+    background-image: linear-gradient(rgba(35,35,35,0), rgba(35,35,35,50));
+}
+
+@-webkit-keyframes filter-animation {
+    0% { -webkit-filter: drop-shadow(0 0 0rem rgb(0, 0, 0));}
+    100% { -webkit-filter: drop-shadow(0 0 0.50rem rgb(255, 217, 0));}
+}
+
+.card:hover {
+    -webkit-animation: filter-animation 0.25s;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 217, 0));
+}
+
+.container {
+    padding: 0 16px;
+    font-size: 30px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.body1 {
+    padding-top: 50px;
+}
+
+.VS {
+    text-decoration: none;
+    color: white;
 }
