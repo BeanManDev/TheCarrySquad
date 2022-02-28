@@ -9,6 +9,18 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     text-align: center;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+img {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .title {
@@ -16,4 +28,28 @@ body {
     margin-bottom: 25%;
     font-size: 100px;
     text-shadow: 4px 4px white;
+}
+
+
+
+@-webkit-keyframes filter-animation {
+    0% { -webkit-filter: drop-shadow(0 0 0rem rgb(0, 0, 0));}
+    100% { -webkit-filter: drop-shadow(0 0 0.50rem rgb(0, 0, 0));}
+}
+
+.links {
+    position: fixed;
+    bottom: 20px;
+    left: 40%;
+    right: 40%
+}
+
+.links img {
+    width: 40px;
+}
+
+.links img:hover {
+    -web-animation: filter-animation 0.25s;
+    filter: drop-shadow(0 0 0.50rem rgb(0, 0, 0));
+    width: 50px;
 }
